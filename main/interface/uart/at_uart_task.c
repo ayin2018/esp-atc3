@@ -71,6 +71,8 @@ static QueueHandle_t esp_at_uart_queue = NULL;
 static const uint8_t esp_at_uart_parity_table[] = {UART_PARITY_DISABLE, UART_PARITY_ODD, UART_PARITY_EVEN};
 extern const char *g_at_mfg_nvs_name;
 
+
+
 #if defined(CONFIG_IDF_TARGET_ESP32)
 #define CONFIG_AT_UART_PORT_TX_PIN_DEFAULT          17
 #define CONFIG_AT_UART_PORT_RX_PIN_DEFAULT          16
